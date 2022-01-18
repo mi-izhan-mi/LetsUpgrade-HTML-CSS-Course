@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsUpgrade Day 2</title>
+</head> 
+
+
+
+<body>
+   
+    <div class="signup-form">
+        <h1>Sign Up</h1>
+    <form action="backened.php">
+        <Label for="fname">
+           First Name:  <input type="text" id="fname">
+        </Label><br>
+
+        <label for="lname">
+            Last Name: <input type="text" id="lname">
+        </label><br>
+
+        <label for="username">
+            Username: <input type="text" id="username" maxlength="8">
+        </label><br>
+
+        <label for="email">
+            Email: <input type="email" id="email">
+        </label><br>
+         DOB:   <input type="date"> <br>
+        <label for="mobile">
+           Mobile No.: <input type="number" id="mobile" minlength="10">
+        </label><br>
+        <label for="pw">
+            Password: <input type="password"  id="pw" minlength="8" maxlength="16">
+        </label> <br><br>
+
+        <input type="submit" value="Submit" id="Submit"> <input type="reset" value="Reset">
+    </form>
+    <p>
+        By clicking Signup you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Policies</a>
+    </p>
+</div>
+<p>
+    Already have an account? <a href="#">Login here</a>
+</p>
+</body>
+</html>
