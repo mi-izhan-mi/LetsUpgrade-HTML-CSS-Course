@@ -7,44 +7,64 @@
     <title>LetsUpgrade Day 2</title>
 </head> 
 
-
-
 <body>
    
-    <div class="signup-form">
-        <h1>Sign Up</h1>
-    <form action="backened.php">
-        <Label for="fname">
-           First Name:  <input type="text" id="fname">
-        </Label><br>
+    <h1>Enrol In Our Institute</h1>
+    <div class="enrol-form">
 
-        <label for="lname">
-            Last Name: <input type="text" id="lname">
-        </label><br>
+        <form action="backened.php" method="post">
+            <label for="student-name">
+                Student Name: <input type="text" name="student-name">
+            </label> <br>
+            <label for="Mobile-Number">
+                Mobile Number: <input type="number" name="Mobile-Number" minlength="10">
+            </label> <br>
 
-        <label for="username">
-            Username: <input type="text" id="username" maxlength="8">
-        </label><br>
+            <label for="DOB">
+                DOB: <input type="date" name="DOB">
+            </label> <br>
+            <label for="city">
+                City: <input type="text" name="city">
+            </label> <br>
+            <label for="state">
+                State: <input type="text" name="state">
+            </label> <br>
 
-        <label for="email">
-            Email: <input type="email" id="email">
-        </label><br>
-         DOB:   <input type="date"> <br>
-        <label for="mobile">
-           Mobile No.: <input type="number" id="mobile" minlength="10">
-        </label><br>
-        <label for="pw">
-            Password: <input type="password"  id="pw" minlength="8" maxlength="16">
-        </label> <br><br>
+            <label for="address">
+                Address: <textarea name="address" id="" cols="20" rows="1"></textarea>
+            </label> <br>
 
-        <input type="submit" value="Submit" id="Submit"> <input type="reset" value="Reset">
-    </form>
-    <p>
-        By clicking Signup you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Policies</a>
+            <label for="gender">
+                Gender: 
+                        <input type="radio" name="myGender">Male
+                   
+                        <input type="radio" name="myGender">Female
+                    
+                        <input type="radio" name="myGender">Prefer Not To Say
+            </label> <br>
+
+           Select Course: <select name="courses">
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="BA">BA</option>
+                <option value="MA">MA</option>
+                <option value="BBA">BBA</option>
+                <option value="MBA">MBA</option>
+                <option value="B.TECH">B.TECH</option>
+                <option value="BMS">BMS</option>
+                <option value="LLB">LLB</option>
+            </select> <br>
+
+           <label for="docs"> Submit Your Documents: <input type="file" name="docs"></label> <br>
+           Additional Information: <textarea name="" id="" cols="20" rows="1"></textarea>
+           <br><br>
+
+           <input type="submit" value="Submit Now"> <input type="reset" value="Reset">
+
+        </form>
+ <p>
+        By submitting you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Policies</a>
     </p>
-</div>
-<p>
-    Already have an account? <a href="#">Login here</a>
-</p>
+    </div>
 </body>
 </html>
